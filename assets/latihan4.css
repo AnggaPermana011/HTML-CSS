@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+      background-color: whitesmoke;
+  }
+  .container{
+      
+      margin: auto;
+      padding: 5px;
+  }
+  .logo {
+    float: left;
+    width: 15%;
+}
+
+.logo img {
+    width: 100px;
+    padding: 5px;
+}
+.head{
+  padding: 5px;
+  width: 85%;
+}
+nav ul {
+  background-color: #e5e5e5;
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  -webkit-transition: max-height 0.04s;
+  -ms-transition: max-height 0.04s;
+  -moz-transition: max-height 0.04s;
+  -o-transition: max-height 0.04s;
+  transition: max-height 0.04s;
+}
+nav a{
+  background-color:#e5e5e5;
+    padding:8px;
+    margin-top:7px;
+    color:black;
+    text-decoration: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+nav ul li:hover{
+  background-color: #555;
+  color: white;
+}
+ 
+.clearfix:before,
+.clearfix:after {
+ content:" ";
+ display:table
+}
+.clearfix:after {
+ clear:both
+}
+.clearfix {
+ *zoom:1
+}
+nav a#pull {
+  display: none;
+ }
+ .side {
+  float:left;
+  width:20%;
+  text-align:justify;
+  background-color:#e5e5e5;
+  padding:8px;
+  margin-top:7px;
+  color:black;
+}
+  .main {
+    float:left;
+    width:60%;
+    padding:0 20px;
+  }
+  .main td{
+      padding: 5px;
+  }
+  /* style untuk form berupa input text */
+.depth {
+    width: 100%;
+    border: 1px solid silver;
+    background: linear-gradient(#eee, #fff);
+    transition: all 0.3s ease-out;
+    padding: 5px;
+    color: #555;
+}
+
+.depth:focus {
+    outline: none;
+    background-position: 0 -1.7em;
+}
+
+/* Field textarea adalah kolom komentar */
+textarea {
+    background: rgb(228, 225, 225);
+    overflow: auto;
+    color: #000033;
+    padding: 5px 5px;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+}
+/* Button style */
+button {
+  border: none;
+  border-radius: 2px;
+  padding: 12px 18px;
+  font-size: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #2196f3;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+}
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: 1s;
+}
+
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: 0.8s;
+}
+  .right {
+    background-color:#e5e5e5;
+    float:left;
+    width:20%;
+    padding:15px;
+    margin-top:7px;
+    text-align:center;
+  }
+  .right p{
+      text-align: justify;
+  }
+  
+  @media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .logo{
+        width: 70px;
+    }
+    .head{
+      float: right;
+      width: 70%;
+    }
+    .side, .main, .right {
+      width:100%;
+    }
+    nav {
+      height: auto;
+      border-bottom: 0;
+      background: whitesmoke;
+     }
+    nav ul {
+       width: 100%;
+       display: none;
+       height: auto;
+    }
+    nav li {
+       width: 100%;
+       float: none;
+       display: block;
+      background: #ffffff;
+     }
+    nav li a {
+     border-bottom: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+   }
+    nav a {
+      text-align: left;
+      font-family: 'Segoe UI';
+      width: 100%;
+       text-indent: 25px;
+       color: #333333;
+       text-decoration: none;
+    }
+    nav a#pull {
+      display: block;
+     background-color: #e5e5e5;
+      width: 100%;
+      position: relative;
+     color: #333333;
+     text-decoration: none;
+   }
+   nav a#pull:after {
+      content:"";
+      width: 100%;
+      background: #e5e5e5;
+      text-align: left;
+      box-sizing: border-box;
+      padding: 15px 50px;
+      cursor: pointer;
+      color: #fff;
+      font-weight: bold;
+      display: none;
+    
+    }
+  }
+  
+  

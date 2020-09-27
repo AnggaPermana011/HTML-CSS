@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>latihan4</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/latihan4.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <header style="overflow: auto;background-color: #e5e5e5; padding: 15px;">
+        <div class="logo">
+            <img src="assets/logovisi.PNG" width="100%">
+        </div>
+      <div class="head">
+        <h1>Selamat Datang</h1>
+        <h4>Website UKM Persma Visi Undiksha</h4>
+      </div>
+    </header>
+    <div>
+        <nav class="clearfix">
+          <a href="#" id="pull">Menu</a>
+          <ul class="clearfix">
+          <ul>
+          <a href="#home"><li>Home</li></a>
+          <a href="#"><li>Berita</li></a>
+          <a href="#"><li>Update Data</li></a>
+          <a href="#"><li>Tentang</li></a>
+          <a href="#profile"><li>Profile</li></a>
+          <a href="#logout"><li>Log Out</li></a>
+        </ul>
+        </nav>
+    </div>
+      <div style="overflow: auto">
+        <div class="side">
+          <img src="assets/comingsoon.jpeg" alt="pamflet coming soon" width="100%">
+          <p>Halo sahabat👋🏼👋🏼
+            Jangan lupa bergabung di UKM Pers Mahasiswa VISI Undiksha
+            Bagi kalian yang berminat dalam bidang jurnalistik, mari bergabung menoreskan karya-karya inovatif kalian.
+            Baik dalam bidang menulis, videografi, photografi, desain maupun presenter.
+            Untuk informasi lebih lanjut pantau terus ig kami dan informasi yang disampaikan di grup WA.
+            Terima kasih😊
+            #visispeakup
+            #stopwaiting</p>
+        </div>
+        <div class="main">
+            <div style="padding: 10px;">
+                <h2 style="margin: 0px;">Update Data Anggota</h2>
+                <br />
+                <form action=" formulir.php" method="post" onSubmit="return ValidasiForm()" name="FormReg">
+                    <table style="padding: 5px;">
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td><input class="depth" type="text" name="nama" value="" placeholder="ex: Ketut Jura" /><br />
+                                <small style="color: red" id="err_nama"></small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td>:</td>
+                            <td> <input class="depth" type="password" name="password"
+                                    placeholder="insert password here" /><br />
+                                <small style="color: red" id="err_password"></small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>:</td>
+                            <!--Gunakan atribut checked untuk memilih radio-->
+                            <td><input type="radio" name="jenis_kelamin" value="lakilaki" checked /> Laki - Laki
+                                <input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan
+                                <br />
+                                <small style="color: red" id="err_jenis_kelamin"></small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hobi</td>
+                            <td>:</td>
+                            <td><input type="checkbox" name="hobi" value="Membaca" /> Fotografi
+                                <!--Gunakan atribut checked untuk memilih checkbox-->
+                                <input type="checkbox" name="hobi" value="Menulis" checked /> Menulis
+                                <input type="checkbox" name="hobi" value="Memancing" /> Vidiografi
+                                <br />
+                                <small style="color: red" id="err_hobi"></small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Asal Kota</td>
+                            <td>:</td>
+                            <td> <select name="asal_kota">
+                                    <option value="Kota Denpasar"> Denpasar</option>
+                                    <option value="Kota Gianyar">Gianyar</option>
+                                    <!--Gunakan atribut selected untuk memilih option-->
+                                    <option value="Kota Singaraja" selected>Singaraja</option>
+                                </select><br />
+                                <small style="color: red" id="err_asal_kota"></small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Komentar</td>
+                            <td>:</td>
+                            <td><textarea name="komentar" rows="5" cols="20"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="right"><button class="ripple" onClick="alert('Data Tersimpan!')"> Simpan </button> </td>
+                          </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="right">
+          <h2>More</h2>
+          <p>UKM Persma Visi menerima pendaftaran anggota baru.</p>
+          <a href="#">Klik disini untuk daftar!</a>
+        </div>
+        <div class="right">
+            <h2>About</h2>
+            <p>Persma Visi adalah UKM di lingkungan Undiksha yang bergerak dibidang Jurnalistik.</p>
+            <a href="https://www.instagram.com/persmavisiundiksha/?hl=en"><p>Follow Us for more on IG: @persmavisiundiksha</p></a>
+          </div>
+      </div>
+
+      <div
+        style="
+          background-color: #e5e5e5;
+          text-align: center;
+          padding: 10px;
+          margin-top: 7px;
+        "
+      >
+      <footer class="footer">
+        Copyright &#169; AP2020
+    </footer>
+      </div>
+    </div>
+    <script>
+
+      $(function() {
+  
+        var pull 		= $('#pull'); // Variabel tombol navigasi (akan muncul hanya pada perangkat mobile)
+  
+          menu 		= $('nav ul'); // Variabel menu
+  
+  
+  
+        $(pull).on('click', function(e) {
+  
+          e.preventDefault();
+  
+          menu.slideToggle();
+  
+        });
+  
+        $(window).resize(function(){
+  
+              var w = $(window).width();
+  
+              if(w > 600 && menu.is(':hidden')) {
+  
+                menu.removeAttr('style');
+  
+              }
+  
+          });
+  
+      });
+  
+    </script>
+  </body>
+</html>
